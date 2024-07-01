@@ -140,7 +140,7 @@ def setup_args():
         "--output",
         default="json",
         help="Enter an output type to write results to file. Defaults to json.",
-        choices=["csv", "txt", "json", "xlsx"],
+        choices=["csv", "txt", "json", "xlsx", "dot"],
     )
     parser.add_argument(
         "-s",
