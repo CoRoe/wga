@@ -2,6 +2,12 @@ from bs4 import BeautifulSoup
 import re
 
 
+def main_UA_code(code):
+    """Strip any subcode from a UA code.
+    """
+    return re.sub('-\\d+$', '', code)
+
+
 def get_UA_code(html):
     """Returns UA codes (w/o duplicates) from given html, or None if not found.
 
